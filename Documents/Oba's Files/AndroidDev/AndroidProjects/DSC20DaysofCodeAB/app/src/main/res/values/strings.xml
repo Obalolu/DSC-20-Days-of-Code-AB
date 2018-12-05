@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">DSC-20-Days-of-Code-AB</string>
+    <string name="app_name">Bible Trivia</string>
+
+    <!-- Question 1 -->
+    <string name="question1">Who commanded the sun and moon to stay still?</string>
+    <string name="q1option1text">Moses</string>
+    <string name="q1option2text">Aaron</string>
+    <string name="q1option3text">Joshua</string>
+
+    <!-- Reset and Submit Buttons -->
+    <string name="reset">reset</string>
+    <string name="submit">submit</string>
+
 </resources>
