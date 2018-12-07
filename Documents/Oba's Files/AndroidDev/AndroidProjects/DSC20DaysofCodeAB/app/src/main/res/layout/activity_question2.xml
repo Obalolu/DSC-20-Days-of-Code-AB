@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/cLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
-    tools:context=".MainActivity">
+    tools:context=".Question2">
 
-    <!-- Question 1 -->
+    <!-- Question 2 -->
 
     <android.support.v7.widget.CardView
         android:id="@+id/q1cardView"
@@ -27,66 +24,63 @@
             android:layout_height="wrap_content">
 
             <ImageView
-                android:id="@+id/q1imageView"
+                android:id="@+id/q2imageView"
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/question1img" />
+                android:src="@drawable/question2img" />
 
             <TextView
-                android:id="@+id/textViewQuestion"
+                android:id="@+id/q2textViewQuestion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/q1imageView"
+                android:layout_below="@id/q2imageView"
                 android:layout_marginLeft="5dp"
                 android:padding="5dp"
-                android:text="@string/question1"
+                android:text="@string/question2"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
                 android:textColor="@android:color/black"
                 android:textStyle="bold" />
 
             <RadioGroup
-                android:id="@+id/q1options"
+                android:id="@+id/q2options"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/textViewQuestion"
+                android:layout_below="@id/q2textViewQuestion"
                 android:padding="5dp">
 
                 <RadioButton
-                    android:id="@+id/q1option1"
+                    android:id="@+id/q2option1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="@string/q1option1text"
+                    android:text="@string/q2option1text"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
                 <RadioButton
-                    android:id="@+id/q1option2"
+                    android:id="@+id/q2option2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="@string/q1option2text"
+                    android:text="@string/q2option2text"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
                 <RadioButton
-                    android:id="@+id/q1option3"
+                    android:id="@+id/q2option3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:onClick="onRadioButtonClicked"
-                    android:text="@string/q1option3text"
+                    android:text="@string/q2option3text"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
             </RadioGroup>
 
             <TextView
-                android:id="@+id/q1answer"
-                android:layout_below="@id/q1options"
+                android:id="@+id/q2answer"
+                android:layout_below="@id/q2options"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
-                android:text="@string/q1answer"
+                android:text="@string/q2answer"
                 android:visibility="invisible"
                 android:padding="5dp"
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
@@ -101,10 +95,23 @@
                 android:layout_marginEnd="5dp"
                 android:layout_marginRight="5dp"
                 android:background="@drawable/button_background"
-                android:enabled="false"
                 android:onClick="next"
                 android:textStyle="bold"
                 android:text="@string/next" />
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/button_background"
+                android:onClick="back"
+                android:textStyle="bold"
+                android:text="@string/back" />
 
         </RelativeLayout>
 
