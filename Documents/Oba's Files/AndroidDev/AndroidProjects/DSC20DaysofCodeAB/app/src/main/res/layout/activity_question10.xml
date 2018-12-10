@@ -54,6 +54,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:onClick="onRadioButtonClicked"
                     android:text="@string/q10option1text"
                     android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
 
@@ -96,6 +97,8 @@
                 android:layout_marginRight="5dp"
                 android:background="@drawable/button_background"
                 android:textStyle="bold"
+                android:onClick="submit"
+                android:clickable="true"
                 android:text="@string/submit" />
 
             <Button
@@ -108,6 +111,7 @@
                 android:layout_marginRight="5dp"
                 android:background="@drawable/button_background"
                 android:textStyle="bold"
+                android:onClick="reset"
                 android:text="@string/reset" />
 
             <Button

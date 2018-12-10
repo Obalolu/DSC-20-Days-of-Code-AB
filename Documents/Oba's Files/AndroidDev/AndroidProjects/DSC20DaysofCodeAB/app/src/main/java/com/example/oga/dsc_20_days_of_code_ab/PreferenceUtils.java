@@ -7,13 +7,18 @@ import android.preference.PreferenceManager;
 public class PreferenceUtils  {
 
     public static void updateScore(Context context, int score) {
-        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
-        SharedPreferences.Editor editor = preferences.edit();
-        editor.putInt("answer_value", 1);
+        SharedPreferences app_preferences = PreferenceManager.getDefaultSharedPreferences(context);
+        SharedPreferences.Editor editor = app_preferences.edit();
+        editor.putInt("answer_value", score);
         editor.apply();
     }
 
-    public void getScore() {
-        return;
+    public static int getScore(Context context) {
+        SharedPreferences app_preferences = PreferenceManager.getDefaultSharedPreferences(context);
+        return app_preferences.getInt("answer_value", 0);
+    }
+
+    public static void resetScore(Context context) {
+        PreferenceUtils.updateScore(context, 0);
     }
 }

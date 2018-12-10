@@ -2,6 +2,8 @@ package com.example.oga.dsc_20_days_of_code_ab;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -22,8 +24,7 @@ import static android.provider.AlarmClock.EXTRA_MESSAGE;
 public class MainActivity extends AppCompatActivity {
 
     int count;
-    TextView answer;
-    Button next;
+    RadioButton q1option3;
 
 
     @Override
@@ -31,45 +32,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        next = findViewById(R.id.next);
-
-    }
-
-    public void onRadioButtonClicked(View view) {
-        // Is the button now checked?
-        next.setEnabled(true);
-        boolean checked = ((RadioButton) view).isChecked();
-
-        // Check which radio button was clicked
-        switch(view.getId()) {
-            case R.id.q1option1:
-                if (checked)
-                    count = 1;
-                    break;
-            case R.id.q1option2:
-                if (checked)
-                    count = 2;
-                    break;
-
-            case R.id.q1option3:
-                if (checked)
-                    count = 3;
-                break;
-        }
-    }
-
-
-    public void submit(View view) {
-        if (count >= 3) {
-            answer = findViewById(R.id.q1answer);
-            answer.setText("Correct");
-            Toast.makeText(this, "Correct Answer", Toast.LENGTH_SHORT).show();
-        } else {
-            Toast.makeText(this, "Wrong Answer", Toast.LENGTH_SHORT).show();
-        }
+        q1option3 = findViewById(R.id.q1option3);
+        PreferenceUtils.resetScore(this);
     }
 
     public void next(View view) {
+        if (q1option3.isChecked()) {
+            Toast.makeText(this, "Correct", Toast.LENGTH_SHORT).show();
+            int score = PreferenceUtils.getScore(this);
+            PreferenceUtils.updateScore(this, score + 1);
+        }else {
+            Toast.makeText(this, "Wrong", Toast.LENGTH_SHORT).show();
+        }
+
         Intent intent = new Intent(this, Question2.class);
         startActivity(intent);
     }
