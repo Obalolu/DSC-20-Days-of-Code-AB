@@ -26,7 +26,7 @@
         <activity android:name=".Question7" />
         <activity android:name=".Question8" />
         <activity android:name=".Question9" />
-        <activity android:name=".Question10"></activity>
+        <activity android:name=".Question10"/>
     </application>
 
 </manifest>

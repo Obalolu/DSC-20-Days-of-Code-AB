@@ -5,70 +5,70 @@
 
 
     <!-- Question 1 -->
-    <string name="question1">Who commanded the sun and moon to stay still?</string>
+    <string name="question1">1. Who commanded the sun and moon to stay still?</string>
     <string name="q1option1text">Moses</string>
     <string name="q1option2text">Aaron</string>
     <string name="q1option3text">Joshua</string>
     <string name="q1answer"> </string>
 
     <!-- Question 2 -->
-    <string name="question2">For which type of tree was Lebanon well known?</string>
+    <string name="question2">2. For which type of tree was Lebanon well known?</string>
     <string name="q2option1text">Fig</string>
     <string name="q2option2text">Cedar</string>
     <string name="q2option3text">Apple</string>
     <string name="q2answer"> </string>
 
     <!-- Question 3 -->
-    <string name="question3">How did Stephanus die?</string>
+    <string name="question3">3. How did Stephanus die?</string>
     <string name="q3option1text">Stoned to death</string>
     <string name="q3option2text">Boiled in hot oil</string>
     <string name="q3option3text">He was executed</string>
     <string name="q3answer"> </string>
 
     <!-- Question 4 -->
-    <string name="question4">Where was Jesus taken prisoner?</string>
+    <string name="question4">4. Where was Jesus taken prisoner?</string>
     <string name="q4option1text">Nazareth</string>
     <string name="q4option2text">Gethsemane</string>
     <string name="q4option3text">Galilee</string>
     <string name="q4answer"> </string>
 
     <!-- Question 5 -->
-    <string name="question5">Which biblical book tells of David and Goliath?</string>
+    <string name="question5">5. Which biblical book tells of David and Goliath?</string>
     <string name="q5option1text">1 Samuel</string>
     <string name="q5option2text">2 Samuel</string>
     <string name="q5option3text">1 Kings</string>
     <string name="q5answer"> </string>
 
     <!-- Question 6 -->
-    <string name="question6">Which mountain is shown above?</string>
+    <string name="question6">6. Which mountain is shown above?</string>
     <string name="q6option1text">Sinai</string>
     <string name="q6option2text">Everest</string>
     <string name="q6option3text">Horeb</string>
     <string name="q6answer"> </string>
 
     <!-- Question 7 -->
-    <string name="question7">Where did a jailer find his faith?</string>
+    <string name="question7">7. Where did a jailer find his faith?</string>
     <string name="q7option1text">Ephesus</string>
     <string name="q7option2text">Philippi</string>
     <string name="q7option3text">Antioch</string>
     <string name="q7answer"> </string>
 
     <!-- Question 8 -->
-    <string name="question8">What were the two sons of Zebedee called?</string>
+    <string name="question8">8. What were the two sons of Zebedee called?</string>
     <string name="q8option1text">Peter and Paul</string>
     <string name="q8option2text">James and John</string>
     <string name="q8option3text">John and Jacob</string>
     <string name="q8answer"> </string>
 
     <!-- Question 9 -->
-    <string name="question9">Which book reports on the missionary travels of Paul?</string>
+    <string name="question9">9. Which book reports on the missionary travels of Paul?</string>
     <string name="q9option1text">Romans</string>
     <string name="q9option2text">1 Corinthians</string>
     <string name="q9option3text">Acts</string>
     <string name="q9answer"> </string>
 
     <!-- Question 10 -->
-    <string name="question10">What was Jacob’s eldest son called?</string>
+    <string name="question10">10. What was Jacob’s eldest son called?</string>
     <string name="q10option1text">Reuben</string>
     <string name="q10option2text">Judah</string>
     <string name="q10option3text">Levi</string>

@@ -1,6 +1,7 @@
 package com.example.oga.dsc_20_days_of_code_ab;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
@@ -11,11 +12,15 @@ public class PreferenceUtils  {
         SharedPreferences.Editor editor = app_preferences.edit();
         editor.putInt("answer_value", score);
         editor.apply();
+        Intent i = new Intent();
+        i.putExtra("score", score);
     }
 
     public static int getScore(Context context) {
         SharedPreferences app_preferences = PreferenceManager.getDefaultSharedPreferences(context);
         return app_preferences.getInt("answer_value", 0);
+
+//        i.getIntExtra("score", 0);
     }
 
     public static void resetScore(Context context) {

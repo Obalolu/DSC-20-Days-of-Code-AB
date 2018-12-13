@@ -20,22 +20,21 @@ public class Question9 extends AppCompatActivity {
     }
 
     public void next(View view) {
+        Intent intent = new Intent(this, Question10.class);
+
         if (q9option3.isChecked()) {
             Toast.makeText(this, "Correct", Toast.LENGTH_SHORT).show();
-            int score = PreferenceUtils.getScore(this);
-            PreferenceUtils.updateScore(this, score + 1);
+            int score = getIntent().getIntExtra("score",0);
+            intent.putExtra("score", score + 1);
+            startActivity(intent);
         }else {
             Toast.makeText(this, "Wrong", Toast.LENGTH_SHORT).show();
+            startActivity(intent);
         }
-
-        Intent intent = new Intent(this, Question10.class);
-        startActivity(intent);
-
     }
 
     public void back(View view) {
-        Intent intent = new Intent(this, Question8.class);
-        startActivity(intent);
+        this.finish();
     }
 
 }
