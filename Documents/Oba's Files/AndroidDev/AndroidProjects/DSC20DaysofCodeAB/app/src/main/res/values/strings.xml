@@ -2,7 +2,11 @@
     <string name="app_name">Bible Trivia</string>
     <string name="next">Next</string>
     <string name="back">Back</string>
-
+    <string name="editTextHint">Name</string>
+    <string name="startQuiz">Start Quiz</string>
+    <string name="welcomeMessage">Welcome!</string>
+    <string name="aboutApp">This is a 10 Question Bible Quiz App </string>
+    <string name="howToPlay">Enter your name and press Start Quiz to begin</string>
 
     <!-- Question 1 -->
     <string name="question1">1. Who commanded the sun and moon to stay still?</string>

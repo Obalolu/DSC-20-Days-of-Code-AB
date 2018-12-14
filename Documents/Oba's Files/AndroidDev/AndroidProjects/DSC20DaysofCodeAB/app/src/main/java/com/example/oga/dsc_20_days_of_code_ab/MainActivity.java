@@ -20,21 +20,6 @@ public class MainActivity extends AppCompatActivity {
         q1option3 = findViewById(R.id.q1option3);
     }
 
-    public void next(View view) {
-        Intent intent = new Intent(this, Question2.class);
-
-        if (q1option3.isChecked()) {
-            Toast.makeText(this, "Correct", Toast.LENGTH_SHORT).show();
-            intent.putExtra("score", 1);
-            startActivity(intent);
-
-        }else {
-            Toast.makeText(this, "Wrong", Toast.LENGTH_SHORT).show();
-            startActivity(intent);
-        }
-
-
-    }
 
 }
 
