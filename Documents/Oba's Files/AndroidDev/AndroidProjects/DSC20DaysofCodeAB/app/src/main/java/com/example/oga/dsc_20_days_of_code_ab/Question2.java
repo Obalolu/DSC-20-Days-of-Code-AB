@@ -22,20 +22,21 @@ public class Question2 extends AppCompatActivity {
 
     public void next(View view) {
         Intent intent = new Intent(this, Question3.class);
+        int score = getIntent().getIntExtra("score",0);
+        String name = getIntent().getStringExtra("name");
 
         if (q2option2.isChecked()) {
             Toast.makeText(this, "Correct", Toast.LENGTH_SHORT).show();
-            int score = getIntent().getIntExtra("score",0);
+            intent.putExtra("name", name);
             intent.putExtra("score", score + 1);
             startActivity(intent);
 
         }else {
             Toast.makeText(this, "Wrong", Toast.LENGTH_SHORT).show();
+            intent.putExtra("name", name);
+            intent.putExtra("score", score);
             startActivity(intent);
         }
-
-
-
     }
 
     public void back(View view) {

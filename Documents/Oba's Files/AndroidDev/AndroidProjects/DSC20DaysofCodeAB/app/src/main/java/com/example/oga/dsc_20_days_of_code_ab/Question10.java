@@ -14,8 +14,6 @@ import android.widget.Toast;
 public class Question10 extends AppCompatActivity {
 
     RadioButton q10option1;
-    Intent intent;
-    int score, finalScore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,18 +34,20 @@ public class Question10 extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void onRadioButtonClicked(View view) {
+
+    public void submit(View view) {
+        int finalScore;
+        int score = getIntent().getIntExtra("score", 0);
+
         if (q10option1.isChecked()) {
-            score = getIntent().getIntExtra("score", 0);
             finalScore = score + 1;
         } else {
             finalScore = score;
         }
-    }
 
-    public void submit(View view) {
+        String name = getIntent().getStringExtra("name");
 
-        Toast.makeText(this, "You Scored " + finalScore + "/10", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, "You Scored " + finalScore + " out of 10, " + name, Toast.LENGTH_SHORT).show();
     }
 
 }
